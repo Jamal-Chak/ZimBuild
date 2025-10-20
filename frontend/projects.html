@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Projects | ZimBuild Construction</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="container header-container">
+            <div class="logo">
+                <h1>Zim<span>Build</span></h1>
+            </div>
+            <nav>
+                <ul class="nav-menu">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="projects.html" class="active">Projects</a></li>
+                    <li><a href="careers.html">Careers</a></li>
+                    <li><a href="safety.html">Safety</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+                <div class="hamburger">
+                    <i class="fas fa-bars"></i>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="container">
+            <h1>Our Projects</h1>
+            <p>Showcasing our commitment to excellence in construction</p>
+        </div>
+    </section>
+
+    <!-- Projects Filter -->
+    <section class="section projects-filter">
+        <div class="container">
+            <div class="filter-buttons">
+                <button class="filter-btn active" data-filter="all">All Projects</button>
+                <button class="filter-btn" data-filter="commercial">Commercial</button>
+                <button class="filter-btn" data-filter="residential">Residential</button>
+                <button class="filter-btn" data-filter="infrastructure">Infrastructure</button>
+                <button class="filter-btn" data-filter="healthcare">Healthcare</button>
+                <button class="filter-btn" data-filter="education">Education</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Grid -->
+    <section class="section projects-grid-section">
+        <div class="container">
+            <div class="projects-grid" id="projects-container">
+                <!-- Commercial Projects -->
+                <div class="project-item" data-category="commercial">
+                    <div class="project-image">
+                        <img src="images/project-commercial-tower.jpg" alt="Johannesburg Financial Center">
+                        <div class="project-overlay">
+                            <a href="#" class="project-link">View Details</a>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3>Johannesburg Financial Center</h3>
+                        <p class="project-category">Commercial</p>
+                        <p class="project-location">Johannesburg, South Africa</p>
+                        <p class="project-description">45-story commercial tower with sustainable features and state-of-the-art facilities.</p>
+                        <div class="project-specs">
+                            <span><i class="fas fa-calendar"></i> 2022-2023</span>
+                            <span><i class="fas fa-ruler-combined"></i> 85,000 sqm</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-item" data-category="commercial">
+                    <div class="project-image">
+                        <img src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Sandton Retail Mall">
+                        <div class="project-overlay">
+                            <a href="#" class="project-link">View Details</a>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3>Sandton Retail Mall</h3>
+                        <p class="project-category">Commercial</p>
+                        <p class="project-location">Sandton, South Africa</p>
+                        <p class="project-description">Modern shopping mall with 120 retail stores and entertainment facilities.</p>
+                        <div class="project-specs">
+                            <span><i class="fas fa-calendar"></i> 2021-2022</span>
+                            <span><i class="fas fa-ruler-combined"></i> 45,000 sqm</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Healthcare Projects -->
+                <div class="project-item" data-category="healthcare">
+                    <div class="project-image">
+                        <img src="images/project-hospital.jpg" alt="Cape Town Medical Center">
+                        <div class="project-overlay">
+                            <a href="#" class="project-link">View Details</a>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3>Cape Town Medical Center</h3>
+                        <p class="project-category">Healthcare</p>
+                        <p class="project-location">Cape Town, South Africa</p>
+                        <p class="project-description">State-of-the-art healthcare facility with 300 beds and specialized treatment centers.</p>
+                        <div class="project-specs">
+                            <span><i class="fas fa-calendar"></i> 2020-2022</span>
+                            <span><i class="fas fa-ruler-combined"></i> 65,000 sqm</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Education Projects -->
+                <div class="project-item" data-category="education">
+                    <div class="project-image">
+                        <img src="images/project-university.jpg" alt="Durban University Complex">
+                        <div class="project-overlay">
+                            <a href="#" class="project-link">View Details</a>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3>Durban University Complex</h3>
+                        <p class="project-category">Education</p>
+                        <p class="project-location">Durban, South Africa</p>
+                        <p class="project-description">Educational facility with modern learning environments and research centers.</p>
+                        <div class="project-specs">
+                            <span><i class="fas fa-calendar"></i> 2019-2021</span>
+                            <span><i class="fas fa-ruler-combined"></i> 55,000 sqm</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Residential Projects -->
+                <div class="project-item" data-category="residential">
+                    <div class="project-image">
+                        <img src="https://images.unsplash.com/photo-1568605114967-8130f3a36994?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Pretoria Luxury Apartments">
+                        <div class="project-overlay">
+                            <a href="#" class="project-link">View Details</a>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3>Pretoria Luxury Apartments</h3>
+                        <p class="project-category">Residential</p>
+                        <p class="project-location">Pretoria, South Africa</p>
+                        <p class="project-description">High-end residential complex with 150 luxury apartments and amenities.</p>
+                        <div class="project-specs">
+                            <span><i class="fas fa-calendar"></i> 2021-2023</span>
+                            <span><i class="fas fa-ruler-combined"></i> 35,000 sqm</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Infrastructure Projects -->
+                <div class="project-item" data-category="infrastructure">
+                    <div class="project-image">
+                        <img src="https://images.unsplash.com/photo-1544454344-1f3a993eafa6?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="N1 Highway Expansion">
+                        <div class="project-overlay">
+                            <a href="#" class="project-link">View Details</a>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3>N1 Highway Expansion</h3>
+                        <p class="project-category">Infrastructure</p>
+                        <p class="project-location">Gauteng, South Africa</p>
+                        <p class="project-description">Major highway expansion project adding 4 new lanes and 3 interchanges.</p>
+                        <div class="project-specs">
+                            <span><i class="fas fa-calendar"></i> 2018-2020</span>
+                            <span><i class="fas fa-ruler-combined"></i> 42 km</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Load More Button -->
+            <div class="text-center">
+                <button id="load-more" class="btn btn-outline">Load More Projects</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Stats Section -->
+    <section class="section projects-stats">
+        <div class="container">
+            <div class="stats-grid">
+                <div class="stat">
+                    <div class="stat-number">150+</div>
+                    <div class="stat-label">Projects Completed</div>
+                </div>
+                <div class="stat">
+                    <div class="stat-number">85+</div>
+                    <div class="stat-label">Commercial Buildings</div>
+                </div>
+                <div class="stat">
+                    <div class="stat-number">45+</div>
+                    <div class="stat-label">Residential Projects</div>
+                </div>
+                <div class="stat">
+                    <div class="stat-number">20+</div>
+                    <div class="stat-label">Infrastructure Works</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-column">
+                    <h3>ZimBuild</h3>
+                    <p>Building excellence with Zimbabwean craftsmanship and South African innovation since 2003.</p>
+                </div>
+                <div class="footer-column">
+                    <h3>Quick Links</h3>
+                    <ul class="footer-links">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="projects.html">Projects</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3>Services</h3>
+                    <ul class="footer-links">
+                        <li><a href="services.html">Commercial Construction</a></li>
+                        <li><a href="services.html">Residential Development</a></li>
+                        <li><a href="services.html">Infrastructure Projects</a></li>
+                        <li><a href="services.html">Renovation & Restoration</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3>Contact Us</h3>
+                    <ul class="footer-links">
+                        <li><i class="fas fa-map-marker-alt"></i> Johannesburg, South Africa</li>
+                        <li><i class="fas fa-phone"></i> +27 11 123 4567</li>
+                        <li><i class="fas fa-envelope"></i> info@zimbuild.co.za</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2023 ZimBuild Construction. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+    <script src="js/projects.js"></script>
+</body>
+</html>
