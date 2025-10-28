@@ -1,0 +1,268 @@
+/* Responsive Styles */
+@media (max-width: 1200px) {
+    .container {
+        width: 95%;
+    }
+    
+    .hero h1 {
+        font-size: 3rem;
+    }
+}
+
+@media (max-width: 992px) {
+    .about-preview-content,
+    .about-main,
+    .careers-hero,
+    .safety-hero-content,
+    .culture-content,
+    .contact-content {
+        grid-template-columns: 1fr;
+    }
+    
+    .footer-content {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+    .service-detail-content {
+        grid-template-columns: 1fr;
+    }
+    
+    .service-detail-content.reverse {
+        direction: ltr;
+    }
+    
+    .hero h1 {
+        font-size: 2.5rem;
+    }
+    
+    .page-header h1 {
+        font-size: 2.5rem;
+    }
+    
+    .stats {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+    .job-card {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 20px;
+    }
+    
+    .job-actions {
+        width: 100%;
+        justify-content: space-between;
+    }
+}
+
+@media (max-width: 768px) {
+    .nav-menu {
+        position: fixed;
+        top: 70px;
+        right: -100%;
+        flex-direction: column;
+        background-color: white;
+        width: 80%;
+        height: calc(100vh - 70px);
+        transition: var(--transition);
+        box-shadow: var(--shadow);
+        padding: 30px;
+        z-index: 999;
+    }
+    
+    .nav-menu.active {
+        right: 0;
+    }
+    
+    .nav-menu li {
+        margin: 15px 0;
+    }
+    
+    .hamburger {
+        display: block;
+    }
+    
+    .hero h1 {
+        font-size: 2rem;
+    }
+    
+    .hero p {
+        font-size: 1rem;
+    }
+    
+    .hero-btns {
+        flex-direction: column;
+        align-items: center;
+        gap: 15px;
+    }
+    
+    .page-header h1 {
+        font-size: 2rem;
+    }
+    
+    .page-header p {
+        font-size: 1rem;
+    }
+    
+    .section {
+        padding: 60px 0;
+    }
+    
+    .stats {
+        grid-template-columns: 1fr;
+    }
+    
+    .form-row {
+        grid-template-columns: 1fr;
+    }
+    
+    .filter-buttons {
+        justify-content: flex-start;
+    }
+    
+    .projects-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .cta-buttons {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .form-container {
+        padding: 30px 20px;
+    }
+    
+    .contact-form-container {
+        padding: 30px 20px;
+    }
+    
+    .safety-certifications {
+        flex-direction: column;
+        gap: 15px;
+    }
+    
+    .programs-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 576px) {
+    .footer-content {
+        grid-template-columns: 1fr;
+    }
+    
+    .hero h1 {
+        font-size: 1.8rem;
+    }
+    
+    .services-preview-grid,
+    .projects-preview-grid,
+    .values-grid,
+    .team-grid,
+    .benefits-grid,
+    .additional-services-grid,
+    .offices-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .stats-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+    .job-meta {
+        flex-direction: column;
+        gap: 10px;
+    }
+    
+    .job-actions {
+        flex-direction: column;
+        gap: 10px;
+        width: 100%;
+    }
+    
+    .job-actions .btn {
+        width: 100%;
+        text-align: center;
+    }
+    
+    .contact-detail {
+        flex-direction: column;
+        text-align: center;
+        gap: 10px;
+    }
+    
+    .contact-icon {
+        align-self: center;
+    }
+    
+    .social-links {
+        justify-content: center;
+    }
+    
+    .logo h1 {
+        font-size: 1.5rem;
+    }
+}
+
+@media (max-width: 400px) {
+    .container {
+        width: 100%;
+        padding: 0 10px;
+    }
+    
+    .hero h1 {
+        font-size: 1.5rem;
+    }
+    
+    .btn {
+        padding: 10px 20px;
+        font-size: 0.9rem;
+    }
+    
+    .section-title {
+        font-size: 1.8rem;
+    }
+    
+    .stats-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* Print Styles */
+@media print {
+    .nav-menu,
+    .hamburger,
+    .hero-btns,
+    .footer,
+    .btn {
+        display: none !important;
+    }
+    
+    header {
+        position: static;
+        box-shadow: none;
+    }
+    
+    .hero {
+        background: none !important;
+        color: black;
+        height: auto;
+        margin-top: 0;
+    }
+    
+    .section {
+        padding: 20px 0;
+        break-inside: avoid;
+    }
+    
+    a {
+        color: black;
+        text-decoration: underline;
+    }
+    
+    .container {
+        width: 100%;
+        max-width: none;
+    }
+}

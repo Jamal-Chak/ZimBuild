@@ -1,0 +1,17 @@
+{
+  "name": "zimbuild-frontend",
+  "version": "1.0.0",
+  "description": "Frontend for ZimBuild Construction Company",
+  "main": "index.html",
+  "scripts": {
+    "dev": "live-server --port=3000 --watch=.",
+    "build": "echo 'No build process needed for static site'",
+    "serve": "live-server --port=3000"
+  },
+  "keywords": ["construction", "portfolio", "zimbabwe", "south-africa"],
+  "author": "ZimBuild Team",
+  "license": "MIT",
+  "devDependencies": {
+    "live-server": "^1.2.2"
+  }
+}
